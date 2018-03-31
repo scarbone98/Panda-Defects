@@ -1,0 +1,193 @@
+body, html {
+   overflow: hidden;
+}
+
+.App {
+    text-align: center;
+    background-color: #3aafa9;
+}
+
+.Top-Bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: calc(7.5vh);
+    align-items: center;
+}
+.PostContent img {
+    width: 25px;
+    height: 25px;
+}
+.ScrollView {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: calc(100vh - 50px);
+    justify-content: space-around;
+}
+
+.HistoryLink {
+    cursor: pointer;
+}
+
+.Link {
+    text-decoration: none;
+    color: white;
+}
+.ShareLabel {
+    cursor: pointer;
+}
+.CommentsLink {
+    text-decoration: none;
+    color: black;
+}
+
+.Top-Bar-Element {
+    cursor: pointer;
+    font-family: 'Avenir';
+    color: white;
+    font-size: x-large;
+}
+
+.Top-Bar-Element:hover {
+    color: #222222;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+.background {
+    animation-name: AnimationName;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    background-color: #3aafa9;
+    position:fixed;
+    width:100%;
+    height:100%;
+    right:0px;
+    left:0px;
+}
+
+.welcome-sign{
+    padding: 1px 5px 5px;
+    cursor: pointer;
+    font-family: 'Avenir';
+    color: black;
+    font-weight: 700;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom:15px;
+}
+
+.login-box {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    padding: 1px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 10%;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+
+    /*padding: 1px 5px 5px;*/
+    cursor: pointer;
+    /*font-family: 'Avenir';*/
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 40px;
+
+}
+
+.emailInput {
+    margin-top: 40px;
+    margin-bottom:15px;
+}
+
+.passwordInput {
+    margin-bottom:40px;
+}
+
+.login-btn {
+    cursor: default;
+    border-radius:0;
+    background:#f7f7f7;
+    margin-bottom:10px;
+    margin-left: 15px;
+    font-family: 'Avenir';
+}
+
+.signup-btn {
+    cursor: default;
+    border-radius:0;
+    background:#f7f7f7;
+    margin-bottom:10px;
+    font-family: 'Avenir';
+}
+
+.overview-header {
+    margin-top: 10px;
+    margin-bottom:25px;
+}
+
+.history-header {
+    margin-top: 35px;
+    margin-bottom:5px;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0 50%}
+}
